@@ -55,12 +55,14 @@
 
 - 데이터 크롤링을 통하여 홈페이지 성격에 맞는, 식물 관련 포스트의 제목과 내용을 추출
 - 모은 데이터는 csv 파일에 저장
-- 실제 서비스에서는 기존 DB의 노하우 게시물 테이블에서 직접 데이터 가져와서 유사도 분석
+- 실제 서비스에서는 기존 DB의 노하우 게시물 테이블에서 직접 데이터 가져와서 유사도 분석  
 
-      <details>
-      <summary>데이터 크롤링 코드</summary>
+<br>
 
-      ```
+<details>
+<summary>Python 코드</summary>
+
+```
         from Tools.scripts.dutree import display
         from urllib.request import urlopen
         from bs4 import BeautifulSoup
@@ -102,12 +104,8 @@
         # 마지막에는 제목, 내용 리스트 길이 출력
         print(f'제목: {len(title_list)}건')
         print(f'내용: {len(content_list)}건')
-
-      ```
-
-      </details>
-
-  <br>
+```
+</details>
 
 ---
 
