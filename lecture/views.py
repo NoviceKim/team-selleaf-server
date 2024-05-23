@@ -495,7 +495,7 @@ class LectureDetailOfflineView(View):
             average_rating = round(review_sum['sum_rating'] / review_sum['count'], 1)
         else:
             average_rating = 0
-
+        times = ''
         dates = Date.objects.filter(lecture_id=lecture['id']).values('id', 'date')
         for date in dates:
             times = Time.objects.filter(date_id=date['id']).values('id', 'time')
@@ -518,7 +518,7 @@ class LectureDetailOfflineView(View):
             'rating_counts': rating_dict,
             'average_rating': average_rating,
             'lecture_count': lecture_count,
-            'lecture_order_time': times.order_by('time'),
+            # 'lecture_order_time': times.order_by('time'),
         }
 
         return render(request, 'lecture/web/lecture-detail-offline.html', context)

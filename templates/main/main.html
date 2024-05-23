@@ -497,8 +497,13 @@
                     <p class="realmain-userReview-contentP">{{ lectureReview.lecture_title }}</p>
                     <p class="realmain-userReview-contentPP">{{ lectureReview.review_content }}</p>
                   </div>
+                    {% if member %}
                   <a class="realmain-userReview-contentA"
-                     href="/lecture/detail/?id={{ lectureReview.lecture_id }}/"></a>
+                     href="/lecture/detail/online/?id={{ lectureReview.lecture_id }}"></a>
+                    {% else %}
+                  <a class="realmain-userReview-contentA"
+                     href="/lecture/detail/offline/?id={{ lectureReview.lecture_id }}"></a>
+                    {% endif %}
                 </div>
               {% endfor %}
             </div>

@@ -872,11 +872,11 @@ ul.ai-recommended-list {
 
 li.recommended-contents-wrap {
   height: 180px;
-  border: 1px solid rgb(222, 215, 215);
+  border: 1px solid rgb(238, 238, 238);
   border-radius: 4px;
   margin: 15px 0;
   padding: 15px;
-  background-color: rgb(222, 215, 215);
+  background-color: rgb(238, 238, 238);
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -919,7 +919,7 @@ div.ai-recommended-content {
 div.select-text-wrap {
   text-align: center;
   height: 30px;
-  color: rgb(222, 215, 215);
+  color: rgb(238, 238, 238);
   font-size: 18px;
   font-weight: 700;
   line-height: 45px;
