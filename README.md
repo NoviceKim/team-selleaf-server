@@ -10,12 +10,12 @@
 # 머신 러닝 웹 적용 프로젝트
 
 <br>
-<br>
-<br>
 
 ![writing](https://github.com/NoviceKim/team-selleaf-server/assets/142701341/d453cdff-012a-4fe1-a721-505037415497)
 
 <sub>출처: https://www.grammarly.com/writing</sub>
+
+<br>
 <br>
 
 ## 제목 기반 내용 추천 시스템
